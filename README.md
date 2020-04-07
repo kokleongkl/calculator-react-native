@@ -7,6 +7,7 @@ React native calculator with redux
 Setup Git:
 
 Windows: https://git-scm.com/download/win
+
 mac : https://www.atlassian.com/git/tutorials/install-git
 
 ```
