@@ -2,17 +2,17 @@
 
 React native calculator with redux
 
-# prerequisite
+# Prerequisite
 
 Setup Git:
 
-Mac/Linux : https://www.atlassian.com/git/tutorials/install-git<br/>
+Mac/Linux/Windows : https://www.atlassian.com/git/tutorials/install-git<br/>
 
 Setup Expo:
 
 https://docs.expo.io/versions/latest/get-started/installation/<br/>
 
-Setup Project:
+# Setup Project:
 
 ```
 
@@ -24,7 +24,7 @@ yarn install (if yarn is your package manager)
 
 ```
 
-To run application:
+# To run application:
 
 ```
 expo start
