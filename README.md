@@ -14,14 +14,14 @@ Setup Expo:
 
 https://docs.expo.io/versions/latest/get-started/installation/<br/>
 
-```
-
 Setup Project:
 
 ```
 
-https://github.com/kokleongkl/react-native-calculator.git
+git clone https://github.com/kokleongkl/react-native-calculator.git
 cd react-native-calculator
+
+```
 
 ```
 
