@@ -20,9 +20,8 @@ Setup Project:
 
 git clone https://github.com/kokleongkl/react-native-calculator.git
 cd react-native-calculator
-
-```
-
-```
+npm install
+or
+yarn install (if yarn is your package manager)
 
 ```
