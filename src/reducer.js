@@ -12,10 +12,10 @@ export const handleOnClick = (value, props) => {
   } else if (value == "=") {
     props.equals();
   } else {
-    let strLastChar = props.output.slice(-1);
+    let lastChar = props.output.slice(-1);
 
     // new expression replace old expression
-    if (isNaN(strLastChar) && isNaN(value)) {
+    if (isNaN(lastChar) && isNaN(value)) {
       props.replace(value);
     } else if (props.output !== initialOutput || isNaN(value)) {
       props.concat(value);
