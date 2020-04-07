@@ -1,5 +1,5 @@
 import { createActions, handleActions } from "redux-actions";
-import { initialOutput } from "./constants";
+import { INITOUTPUT } from "./constants";
 
 export const { clear, equals, replace, concat, concatwithout } = createActions(
   "CLEAR",
@@ -10,14 +10,14 @@ export const { clear, equals, replace, concat, concatwithout } = createActions(
 );
 
 const initialState = {
-  output: initialOutput,
+  output: INITOUTPUT,
 };
 
 export const dispatchReducer = handleActions(
   {
     CLEAR: (state) => ({
       ...state,
-      output: initialOutput,
+      output: INITOUTPUT,
     }),
     EQUALS: (state) => ({
       ...state,

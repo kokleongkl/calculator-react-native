@@ -1,6 +1,6 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`Button Rendering should match to snapshot 1`] = `
+exports[`Button Button Component rendered should match to snapshot 1`] = `
 <View
   accessible={true}
   focusable={false}

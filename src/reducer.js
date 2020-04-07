@@ -1,6 +1,6 @@
 import { combineReducers } from "redux";
 import { dispatchReducer } from "./actions";
-import { initialOutput } from "./constants";
+import { INITOUTPUT, ERROR_MESSAGE } from "./constants";
 
 export const reducer = combineReducers({
   dispatchReducer,
@@ -10,17 +10,28 @@ export const handleOnClick = (value, props) => {
   if (value == "C") {
     props.clear();
   } else if (value == "=") {
-    props.equals();
-  } else {
     let lastChar = props.output.slice(-1);
-
-    // new expression replace old expression
-    if (isNaN(lastChar) && isNaN(value)) {
-      props.replace(value);
-    } else if (props.output !== initialOutput || isNaN(value)) {
-      props.concat(value);
+    let pattern = RegExp(/[+-/*]/);
+    let result = pattern.test(lastChar);
+    if (result == true) {
+      props.clear();
+      props.replace(ERROR_MESSAGE);
     } else {
-      props.concatwithout(value);
+      props.equals();
+    }
+  } else {
+    if (props.output == ERROR_MESSAGE) {
+      props.clear();
+      props.replace(value);
+    } else {
+      let lastChar = props.output.slice(-1);
+      if (isNaN(lastChar) && isNaN(value)) {
+        props.replace(value);
+      } else if (props.output !== INITOUTPUT || isNaN(value)) {
+        props.concat(value);
+      } else {
+        props.concatwithout(value);
+      }
     }
   }
 };

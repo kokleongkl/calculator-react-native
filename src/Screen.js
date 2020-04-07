@@ -1,6 +1,6 @@
 import React from "react";
 import { View, Text } from "react-native";
-import { numberButtons, symbolButtons } from "./constants";
+import { NUMBER_BUTTONS, SYMBOL_BUTTONS } from "./constants";
 import { styles } from "./styles";
 import Button from "../src/Button";
 import { connect } from "react-redux";
@@ -13,7 +13,7 @@ const Screen = (props) => (
     </View>
     <View style={styles.containerRow}>
       <View style={styles.flexNumbers}>
-        {numberButtons.map((row, index) => (
+        {NUMBER_BUTTONS.map((row, index) => (
           <View key={index} style={styles.containerRow}>
             {row.map((col, index) => (
               <Button
@@ -26,7 +26,7 @@ const Screen = (props) => (
         ))}
       </View>
       <View style={styles.rootContainer}>
-        {symbolButtons.map((row, index) => (
+        {SYMBOL_BUTTONS.map((row, index) => (
           <Button
             style={{ marginRight: 10 }}
             key={index}
