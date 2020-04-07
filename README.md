@@ -6,16 +6,13 @@ React native calculator with redux
 
 Setup Git:
 
-Windows: https://git-scm.com/download/win
+Windows: https://git-scm.com/download/win<br/>
 
-mac : https://www.atlassian.com/git/tutorials/install-git
+mac : https://www.atlassian.com/git/tutorials/install-git<br/>
 
-```
 Setup Expo:
 
-```
-
-https://docs.expo.io/versions/latest/get-started/installation/
+https://docs.expo.io/versions/latest/get-started/installation/<br/>
 
 ```
 
